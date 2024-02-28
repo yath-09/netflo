@@ -52,46 +52,7 @@
   @apply text-base-medium text-center text-white hover:text-pink-1;
 }
 
-/* Navbar */
-.navbar {
-  @apply top-0 z-10 sticky flex items-center justify-between py-3 px-10;
-}
 
-.nav-links {
-  @apply flex gap-8 max-md:hidden;
-}
-
-.nav-link {
-  @apply text-white text-heading3-bold cursor-pointer hover:text-pink-1;
-}
-
-.nav-right {
-  @apply flex gap-8 items-center;
-}
-
-.profile {
-  @apply w-8 h-auto cursor-pointer;
-}
-
-.icon {
-  @apply size-7 cursor-pointer text-white hover:text-pink-1;
-}
-
-.dropdown-menu {
-  @apply absolute top-20 p-3 flex flex-col gap-3 right-5 z-20 w-32 bg-white rounded-xl;
-}
-
-.dropdown-menu > a {
-  @apply text-base-bold text-black-1 hover:text-pink-1 cursor-pointer;
-}
-
-.search {
-  @apply flex justify-between items-center gap-2 px-4 py-2 rounded-xl;
-}
-
-.input-search {
-  @apply w-40 bg-transparent outline-none text-body-medium text-white;
-}
 
 /* Hero */
 .hero-bg {
@@ -124,37 +85,6 @@
 
 .hero-btn {
   @apply flex items-center justify-center gap-1.5 px-4 py-3 rounded-xl cursor-pointer bg-white text-body-bold hover:bg-pink-1 hover:text-white;
-}
-
-/* All movies */
-.all-movies {
-  @apply flex flex-col gap-8 mt-16 pl-10;
-}
-
-/* Category */
-.category {
-  @apply flex flex-col gap-4;
-}
-
-.category-title {
-  @apply text-heading3-bold text-white;
-}
-
-.movie-list {
-  @apply flex gap-2 overflow-x-scroll scrollbar-hide;
-}
-
-/* Movie */
-.movie-card {
-  @apply relative h-24 min-w-48 sm:h-32 sm:min-w-60 md:h-36 md:min-w-72 cursor-pointer hover:outline-white;
-}
-
-.thumbnail {
-  @apply object-cover w-full h-full rounded-lg;
-}
-
-.border {
-  @apply absolute inset-0 rounded-lg border-4 border-transparent hover:border-white;
 }
 
 /* Modal */
