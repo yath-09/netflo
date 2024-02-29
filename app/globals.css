@@ -52,58 +52,6 @@
   @apply text-base-medium text-center text-white hover:text-pink-1;
 }
 
-
-
-/* Hero */
-.hero-bg {
-  @apply absolute top-0 left-0 -z-10 h-screen w-screen;
-}
-
-.hero-bg-image {
-  @apply object-cover h-full w-full;
-}
-
-.overlay {
-  @apply absolute inset-0 bg-gradient-to-b from-transparent to-black-1;
-}
-
-.hero {
-  @apply flex flex-col px-10 pt-20 gap-10 max-w-xl;
-}
-
-.hero-title {
-  @apply text-heading1-bold text-white;
-}
-
-.hero-overview {
-  @apply text-base-medium text-white;
-}
-
-.hero-btns {
-  @apply flex gap-8;
-}
-
-.hero-btn {
-  @apply flex items-center justify-center gap-1.5 px-4 py-3 rounded-xl cursor-pointer bg-white text-body-bold hover:bg-pink-1 hover:text-white;
-}
-
-/* Modal */
-.modal {
-  @apply fixed inset-0 z-30 bg-black-1 bg-opacity-95 w-full max-w-2xl mx-auto overflow-hidden overflow-y-scroll scrollbar-hide rounded-xl;
-}
-
-.modal-close {
-  @apply absolute right-5 top-5 z-40;
-}
-
-.modal-video {
-  @apply top-0 left-0 w-full h-3/5;
-}
-
-.modal-content {
-  @apply flex flex-col gap-3 p-6 text-white;
-}
-
 /* My List */
 .list {
   @apply flex items-center justify-center gap-6 lg:gap-10 flex-wrap px-3 sm:px-6 md:px-10 py-20;
