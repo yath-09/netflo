@@ -2,13 +2,14 @@
 import Link from "next/link"
 import { Search } from "@mui/icons-material";
 import { useEffect,useState } from "react";
+import { useRouter } from "next/navigation";
 
 
 const Navbar = () => {
   const [search, setSearch] = useState<string>("");
   const [dropdownMenu, setDropdownMenu] = useState<boolean>(false);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
-
+  const router=useRouter();
   const handleScroll = () => {
     if (window.scrollY > 10) {
       setIsScrolled(true);
@@ -47,11 +48,12 @@ const Navbar = () => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        <button disabled={search === ""}>
+         <button disabled={search === ""}>
           <Search
             className="size-7 cursor-pointer text-white hover:text-pink-1"
+            onClick={()=>router.push(`/search/${search}`)}
           />
-        </button>
+         </button>
       </div>
 
       <img

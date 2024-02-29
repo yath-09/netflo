@@ -57,7 +57,3 @@
   @apply flex items-center justify-center gap-6 lg:gap-10 flex-wrap px-3 sm:px-6 md:px-10 py-20;
 }
 
-/* Search Page */
-.search-page {
-  @apply flex flex-col py-16 px-10;
-}
